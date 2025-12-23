@@ -1,0 +1,52 @@
+---
+import themeConfig from '../data/themes.json';
+
+export interface Props {
+  mobile?: boolean;
+}
+
+const { mobile = false } = Astro.props;
+const themes = themeConfig.themes;
+const defaultTheme = themeConfig.default;
+const classes = mobile ? 'menu menu--mobile menu--theme' : 'menu menu--theme';
+---
+
+<ul class={classes}>
+  <li class="menu__trigger">Theme ▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      {themes.map(theme => (
+        <li><a href="#" data-theme-id={theme.id} class="theme-option" onclick={`window.applyTheme('${theme.id}'); return false;`}>{theme.name}</a></li>
+      ))}
+    </ul>
+  </li>
+</ul>
+
+<script define:vars={{ themes, defaultTheme }} is:inline>
+  // Theme switching functionality - only runs once
+  if (!window.themeSystemInitialized) {
+    window.themeSystemInitialized = true;
+
+    const STORAGE_KEY = 'selected-theme';
+
+    window.applyTheme = function(themeId) {
+      const theme = themes.find(t => t.id === themeId);
+      if (theme && theme.colors) {
+        const root = document.documentElement;
+        Object.entries(theme.colors).forEach(([key, value]) => {
+          root.style.setProperty(`--${key}`, value);
+        });
+        localStorage.setItem(STORAGE_KEY, themeId);
+
+        // Close all open menus
+        document.querySelectorAll('.menu.open').forEach(menu => {
+          menu.classList.remove('open');
+        });
+      }
+    };
+
+    // Load saved theme or default on page load
+    const savedTheme = localStorage.getItem(STORAGE_KEY) || defaultTheme;
+    window.applyTheme(savedTheme);
+  }
+</script>

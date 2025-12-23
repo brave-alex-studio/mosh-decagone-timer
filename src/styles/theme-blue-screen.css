@@ -1,0 +1,14 @@
+:root {
+  --background: #153489;
+  --foreground: #eceae5;
+  --accent: #93c3f4;
+  --radius: 0;
+  --font-size: 1rem;
+  --line-height: 1.54em;
+  --deep-background-color: #153489;
+  --background-gradient: radial-gradient(
+    rgba(120, 150, 234, 0.75),
+    #153489 120%
+  );
+  --text-shadow: #c8c8c8;
+}

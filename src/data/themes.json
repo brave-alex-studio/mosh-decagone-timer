@@ -1,0 +1,85 @@
+{
+  "themes": [
+    {
+      "id": "nostromo",
+      "name": "Nostromo",
+      "description": "Nostromo-inspired theme",
+      "colors": {
+        "background": "#1d2021",
+        "foreground": "#eceae5",
+        "accent": "#e8d8a3",
+        "radius": "0",
+        "font-size": "1rem",
+        "line-height": "1.54em",
+        "deep-background-color": "#000000",
+        "background-gradient": "radial-gradient(rgba(80, 73, 69, 0.75), #1d2021 120%)",
+        "text-shadow": "#c8c8c8"
+      }
+    },
+    {
+      "id": "blue-screen",
+      "name": "Blue Screen",
+      "description": "Windows blue screen inspired",
+      "colors": {
+        "background": "#153489",
+        "foreground": "#eceae5",
+        "accent": "#93c3f4",
+        "radius": "0",
+        "font-size": "1rem",
+        "line-height": "1.54em",
+        "deep-background-color": "#153489",
+        "background-gradient": "radial-gradient(rgba(120, 150, 234, 0.75), #153489 120%)",
+        "text-shadow": "#c8c8c8"
+      }
+    },
+    {
+      "id": "decagone",
+      "name": "Decagone",
+      "description": "Decagone theme",
+      "colors": {
+        "background": "#403352",
+        "foreground": "#f7e9f9",
+        "accent": "#cec0e4",
+        "radius": "0",
+        "font-size": "1rem",
+        "line-height": "1.54em",
+        "deep-background-color": "#403352",
+        "background-gradient": "radial-gradient(rgba(153, 124, 234, 0.75), #403352 120%)",
+        "text-shadow": "#c8c8c8"
+      }
+    },
+    {
+      "id": "matrix",
+      "name": "Matrix",
+      "description": "Classic green-on-black terminal",
+      "colors": {
+        "background": "#000000",
+        "foreground": "#4eee85",
+        "accent": "#4eee85",
+        "radius": "0",
+        "font-size": "1rem",
+        "line-height": "1.54em",
+        "deep-background-color": "#000000",
+        "background-gradient": "radial-gradient(rgba(0, 150, 0, 0.75), #000000 120%)",
+        "text-shadow": "#c8c8c8"
+      }
+    },
+    {
+      "id": "pistachio",
+      "name": "Pistachio",
+      "description": "Warm green terminal theme",
+      "colors": {
+        "background": "#1d2021",
+        "foreground": "#ebdbb2",
+        "accent": "#8ec07c",
+        "radius": "0",
+        "font-size": "1rem",
+        "line-height": "1.54em",
+        "deep-background-color": "#000000",
+        "background-gradient": "radial-gradient(rgba(1, 88, 59, 0.75), #1d2021 120%)",
+        "text-shadow": "#c8c8c8"
+      }
+    }
+  ],
+  "default": "decagone"
+}

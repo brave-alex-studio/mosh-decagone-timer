@@ -1,0 +1,11 @@
+:root {
+  --background: #1d2021;
+  --foreground: #ebdbb2;
+  --accent: #8ec07c;
+  --radius: 0;
+  --font-size: 1rem;
+  --line-height: 1.54em;
+  --deep-background-color: #000000;
+  --background-gradient: radial-gradient(rgba(1, 88, 59, 0.75), #1d2021 120%);
+  --text-shadow: #c8c8c8;
+}

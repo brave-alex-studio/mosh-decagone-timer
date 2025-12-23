@@ -1,0 +1,13 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Timer from '../components/Timer';
+---
+
+<BaseLayout title="Moroi Technologies">
+  <div class="index-content framed">
+    <h1 id="hello-there">Welcome to the Moroi Deep Ocean Research Facility</h1>
+    <p>Have a productive and safe day</p>
+
+    <Timer client:load />
+  </div>
+</BaseLayout>
