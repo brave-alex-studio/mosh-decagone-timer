@@ -7,9 +7,9 @@ import solidJs from "@astrojs/solid-js";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "http://localhost",
+  site: "https://brave-alex-studio.github.io",
   // Only use base path in production (GitHub Pages)
-  base: process.env.NODE_ENV === "production" ? "/astro-theme-terminal" : "/",
+  base: process.env.NODE_ENV === "production" ? "/mosh-decagone-timer" : "/",
   integrations: [icon(), solidJs()],
   markdown: {
     shikiConfig: {
