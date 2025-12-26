@@ -24,6 +24,15 @@ Note about the audio from @Lizardperson (copied from Discord):
 
 </details>
 
+### Running locally
+
+1. Clone the repo
+2. Run `npm install`
+3. Run `npm run dev`
+4. Open `localhost:4321` in your browser
+
+In local mode, there is an additional tool that will allow you to pick a specific time in the timer (so you don't have to listen to the entire track for any testing).
+
 ## Credits
 
 - Decagone module by WacoMatrixo
